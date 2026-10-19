@@ -5,15 +5,15 @@ public class CheckGender{
 		
 		char choice;
 		
-	    do{
-			System.out.print("Are you a female?: ");
-			choice = scan.next().charAt(0);
+		 System.out.print("Enter your name: ");
+			String name = scan.nextLine();
 			
-			System.out.print("Enter your name: ");
-			String name = scan.next().charAt(0);
+		do{
+			System.out.print("Are you a female?: ");
+		    choice = scan.next().charAt(0);
 			
 		}while(choice == 'Y' || choice == 'y');
-		System.out.println("Sorry you are not a female",name);
+		System.out.printf("%s Sorry you are not a female",name);
 	}
 }
 		
